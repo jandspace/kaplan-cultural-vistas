@@ -1,0 +1,127 @@
+.meet-our-team {
+
+  width: 100%;
+  background-color:#2F353E;
+  min-height: 350px;
+  padding-bottom:50px;
+
+  &__stuff {
+     width: 100%;
+    float: left;
+    padding: 20px 0;
+
+    &__title {
+      font-size: 14px;
+      margin-bottom: 5px;
+      color: white;
+      margin-top: 40px;
+      text-align: center;
+    }
+
+  }
+
+  &__content {
+    lost-column: 1/1;
+    background-color: #f0f0f0;
+    margin-bottom:20px;
+
+    h4 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 5px;
+      text-align: center;
+      width: 100%;
+
+
+      @mixin atMedium {
+       text-align: left;
+
+      }
+    }
+
+    h6 {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 15px;
+      margin-top: 5px;
+      text-align: center;
+
+      @mixin atMedium {
+        text-align: left;
+        margin-bottom: 25px;
+
+      }
+    }
+
+    a   {
+      display: block;
+      text-decoration: none;
+      text-align: center;
+
+      &:hover {
+        color: $pink;
+
+
+      }
+
+
+      @mixin atMedium {
+        text-align: left;
+
+
+      }
+    }
+
+    @mixin atSmall {
+      lost-column: 1/2;
+      min-height: 100px;
+
+
+    }
+  }
+
+
+
+
+  &__content-inner:first-child {
+    lost-column: 1/1;
+
+    img {
+      display: block;
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+
+    }
+
+    @mixin atMedium {
+      lost-column: 1/3;
+
+
+    }
+
+
+  }
+
+
+  &__content-inner:last-child {
+    lost-column: 1/1;
+    padding-bottom: 20px;
+
+
+    @mixin atMedium {
+      lost-column: 2/3;
+
+
+    }
+  }
+
+
+
+
+  @mixin atMedium {
+
+  }
+
+
+}

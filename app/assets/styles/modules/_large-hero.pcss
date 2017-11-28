@@ -1,0 +1,230 @@
+.large-hero {
+  position: relative;
+  height: auto;
+  min-height: 450px;
+  width: 100%;
+
+  @mixin atMedium {
+    height: 600px;
+    width: 100%;
+    float: left;
+
+  }
+
+
+  &--bg-1 {
+
+    position: relative;
+    background:url("../../assets/images/hero-img-small.jpg") no-repeat/*rtl:url("../../assets/images/hero-img-small-1-ar.jpg") no-repeat fixed*/;
+    background-size: 100%;
+    background-position: center;
+
+
+    @mixin atMedium {
+      background:url("../../assets/images/hero-img.jpg")  no-repeat fixed/*rtl:url("../../assets/images/hero-img-1-ar.jpg") no-repeat fixed*/;
+      background-size: cover;
+      background-position: center;
+
+    }
+    @mixin atRetina {
+      background:url("../../assets/images/hero-img@2x.jpg")  no-repeat fixed/*rtl:url("../../assets/images/hero-img-1-ar@2x.jpg") no-repeat fixed*/;
+      background-size: cover;
+      background-position: center;
+
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      background-color: rgba(0, 0, 0, 0.20);
+
+    }
+
+  }
+
+  &--bg-2 {
+
+    position: relative;
+    background:url("../../assets/images/hero-img-small.jpg") no-repeat fixed/*rtl:url("../../assets/images/hero-img-small-1-ar.jpg") no-repeat fixed*/;
+    background-size: 100%;
+    background-position: 50% 60px;
+
+
+    @mixin atMedium {
+      background:url("../../assets/images/hero-img.jpg")  no-repeat fixed/*rtl:url("../../assets/images/hero-img-1-ar.jpg") no-repeat fixed*/;
+      background-size: cover;
+      background-position: 50% 60px;
+
+    }
+    @mixin atRetina {
+      background:url("../../assets/images/hero-img2@2x.jpg")  no-repeat fixed/*rtl:url("../../assets/images/hero-img-1-ar@2x.jpg") no-repeat fixed*/;
+      background-size: cover;
+      background-position: 50% 60px;
+
+
+
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      background-color: rgba(0, 0, 0, 0.20);
+
+    }
+
+  }
+
+
+
+  &__text-content {
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    lost-column: 1/1;
+    z-index: 20;
+    margin-top:100px;
+
+
+    @mixin atMedium {
+      lost-column: 2/3;
+      text-align: left;
+      margin-top:200px;
+
+    }
+
+  }
+
+
+  &__p {
+    display: inline-block;
+    color: $darkGray;
+    font-size: 1.2rem;
+    border-bottom: 1px solid rgba(32,32,32,0.65);
+
+    @mixin atSmaller {
+      font-size: 1rem;
+
+    }
+    @mixin atMedium {
+      font-size: 1.75rem;
+    }
+
+    &--white {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.65);
+
+      color: $darkGray;
+      text-shadow: none;
+
+      @mixin atMedium {
+        color: white;
+        text-shadow: 1px 1px 9px rgba(150, 150, 150, 0.45);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.65);
+
+      }
+
+    }
+
+
+    &--white-2 {
+      color: white;
+      text-shadow: 1px 1px 9px rgba(150, 150, 150, 0.45);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.65);
+
+
+    }
+
+
+
+
+  }
+  &__h2 {
+    display: block;
+    color: $darkGray;
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+
+    &--white {
+      color: $darkGray;
+      text-shadow: none;
+
+      @mixin atMedium {
+        color: white;
+        text-shadow: 1px 1px 9px rgba(150, 150, 150, 0.45);
+      }
+    }
+
+    &--white-2 {
+      color: white;
+      text-shadow: 1px 1px 9px rgba(150, 150, 150, 0.45);
+
+    }
+
+
+    @mixin atSmaller {
+      font-size: 1.2rem;
+    }
+
+    @mixin atMedium {
+      font-size: 2.5rem;
+    }
+
+  }
+  &__h1 {
+    display: block;
+    color: $darkGray;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 100%;
+    margin: 0;
+    padding: 0;
+
+    &--white {
+      color: white;
+      text-shadow: 1px 1px 9px rgba(150, 150, 150, 0.45);
+
+
+      @mixin atMedium {
+        color: white;
+        text-shadow: 1px 1px 9px rgba(150, 150, 150, 0.45);
+
+      }
+    }
+
+    &--white-2 {
+      color: white;
+      text-shadow: 1px 1px 9px rgba(150, 150, 150, 0.45);
+
+    }
+
+
+    @mixin atSmaller {
+      font-size: 25px;
+    }
+
+    @mixin atMedium {
+      font-size: 35px;
+    }
+
+    @mixin atLarge {
+      font-size: 44px;
+
+    }
+
+  }
+
+}
+
+
+

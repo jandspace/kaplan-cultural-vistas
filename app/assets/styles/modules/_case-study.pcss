@@ -1,0 +1,100 @@
+.case-study {
+  background-color: #F2F2F2;
+
+  p {
+    line-height: 143%;
+    font-size: 14px;
+    text-align: center;
+    @mixin atSmall {
+      text-align: left;
+
+    }
+  }
+
+
+  h3 {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+
+    text-align: center;
+    @mixin atSmall {
+      text-align: left;
+    }
+  }
+
+
+  li .icon {
+    display: inline-block;
+  }
+
+
+
+  &__col {
+    position: relative;
+    margin-top: 40px;
+    lost-column: 1/1;
+
+    @mixin atMedium {
+      lost-column: 1/2;
+
+    }
+
+
+    ul {
+      padding: 0 0 0 20px;
+      // width: 100%;
+      // margin: 0;
+      // padding: 0;
+      // list-style: none;
+      //columns: 2;
+
+
+
+    }
+    li {
+      line-height: 180%;
+      text-align: left;
+      font-size: 14px;
+
+      span {
+        margin-right: 20px;
+      }
+
+      @mixin atSmall {
+        text-align: left;
+
+      }
+    }
+
+    &--line {
+
+      &::after {
+        content: none;
+        position: absolute;
+        height: 100%;
+        right: -10px;
+        top: 0;
+        width: 100%;
+        border-right: 1px solid rgba(144, 144, 144, 0.29);
+
+        @mixin atSmall {
+          content: " ";
+        }
+      }
+
+
+
+
+
+
+
+  }
+
+
+
+  }
+
+
+
+}

@@ -1,0 +1,47 @@
+.accommodation {
+  background-color: #DDD;
+
+  p.head-desc {
+    text-align: center;
+
+    @mixin atMedium {
+      max-width: 940px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &__content {
+    lost-column: 1/1;
+    min-height: 100px;
+    padding-top: 40;
+    padding-bottom: 20px;
+
+    @mixin atSmall {
+      padding-top: 40px;
+    }
+
+  }
+
+  &__content-inner {
+    lost-column: 1/1;
+
+    @mixin atSmall {
+      lost-column: 1/2;
+    }
+
+    h3.title {
+      margin-bottom: 0.25em;
+    }
+    p {
+      font-size: 14px;
+      line-height: 140%;
+    }
+
+    ul {
+      line-height: 140%;
+    }
+
+  }
+
+}
